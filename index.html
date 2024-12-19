@@ -7,244 +7,284 @@
     <title>Vinh's Porfolio</title>
   </head>
   <body>
-    <div id="portfolio_title">
-      <h2>Hi everyone, My name is</h2>
-      <h1>Nguyen Minh Vinh</h1>
-      <h3>a software engineer</h3>
-    </div>
+    <div id="main">
+      <div id="left">
+        <div id="portfolio_title">
+          <h2>Hi everyone, My name is</h2>
+          <h1>Nguyen Minh Vinh</h1>
+          <h3>a software engineer</h3>
+        </div>
+        <div id="about">
+          <h2>About myself</h2>
+          <p>
+            Hi everyone, I was born on May 2nd, 2000. I was born in Binh Thuan
+            province. My house is only 200m from the sea, however I cannot swim.
+            Currently I'm living and working at Ho Chi Minh city.
+          </p>
+          <p>
+            When I was a kid, I very fond of logical and electronics things. I
+            used to good at Math and Physics. Therefore, I become a software
+            engineer.
+          </p>
+          <p>
+            In the college, I was a researcher at the IC Design Lab at HCMUT in
+            AI technology. At that time, I spent all my time reading scientific
+            paper and learning about <b>Machine Learning</b> and
+            <b>Deep Learning</b>, it was a very hard time. However the results
+            is sastified, I <b>published a scientific paper</b> at a scientific
+            conference about a CNN model. After that, I work as a Backend End
+            Engineer at MoneyForward Viet Nam, which is a
+            <b>Japan product company</b>. I involved in two projects:
+            <b>managing electrical invoices</b> and
+            <b>sending electrical invoices</b>, which
+            <b
+              >scalabily, reliability, high performance, easy monitoring and
+              fault tolerance</b
+            >.
+          </p>
+          <p>
+            In my free time, I'm usually playing video games, watching Kdrama,
+            watching anime, playing soccer, playing soccer and hanging out with
+            my friends or colleges.
+          </p>
+        </div>
+        <div id="education">
+          <h2>Education</h2>
+          <ul>
+            <li>Ho Chi Minh University of Technology</li>
+            <img id="logo_bach_khoa" src="./images/logo_bach_khoa.png" />
+            <p>Time: 8/2018 - 11/2022</p>
+            <p>Major: Electrical and Electronics</p>
+            <p>GPA: 8.07/10.00</p>
+          </ul>
+        </div>
+        <div id="contacts">
+          <h2>Contacts</h2>
+          <ul>
+            <li>Phone: 0919655473</li>
+            <li>Email: nguyenminhvinh37@gmail.com</li>
+            <li>
+              Linkedin:
+              https://www.linkedin.com/in/vinh-nguy%E1%BB%85n-minh-4b5458235/
+            </li>
+            <li>Github: https://github.com/MinhVinh-37</li>
+          </ul>
+        </div>
+      </div>
+      <div id="right">
+        <div id="skills">
+          <h2>My skills</h2>
+          <ul>
+            <li>Design and implement RestAPI</li>
+            <li>Design and implement GraphqlAPI</li>
+            <li>Design and implement background worker</li>
+            <li>Apply design patterns in coding</li>
+            <li>Build CI with github action</li>
+            <li>Working with cloud AWS</li>
+            <li>Deployment using Docker, Kubernetes and Terraform</li>
+            <li>Implement multi-threading</li>
+          </ul>
+        </div>
+        <div id="experiences">
+          <h2>My experiences</h2>
+          <ul>
+            <li>
+              <div class="experience">
+                <div class="left_side">
+                  <p class="title">08/2022 - present</p>
+                  <br />
+                  <img
+                    id="logo_moneyforward_vietnam"
+                    src="./images/logo_moneyforward_vietnam.png"
+                  />
+                </div>
+                <div class="right_side">
+                  <p class="title">Backend Engineer</p>
+                  <p>
+                    Design, implement and maintain server using Python language.
+                    <b>Work closely with product owner, senior developer</b> to
+                    implement new feature, enhance old feature.
+                    <b>Monitor system</b> with help of Datadog and Rollbar when
+                    something deploy to production.
+                    <b>Communicate with other team</b> in the company to
+                    integrate with their product.
+                    <b>Handle customer support</b> requests.
+                  </p>
+                  <ul class="tech_tags">
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Celery</li>
+                    <li>MySQL</li>
+                    <li>Redis</li>
+                    <li>SendGrid</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Datadog</li>
+                    <li>Sentry</li>
+                    <li>Rollbar</li>
+                    <li>AWS</li>
+                    <li>Linux</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="experience">
+                <div class="left_side">
+                  <p class="title">01/2021 - 05/2022</p>
+                  <br />
+                  <img
+                    id="logo_ic_design_lab"
+                    src="./images/logo_ic_design_lab.jpg"
+                  />
+                </div>
+                <div class="right_side">
+                  <p class="title">AI researcher</p>
+                  <p>
+                    Studying AI technology in <b>image processing</b> field
+                    under instruction from a teacher.
+                    <b>Read scientific papers</b> about CNN. Build projects
+                    based on image processing.
+                    <b>Write and publish a scientific paper</b>.
+                    <b>Join BK Innovation contest</b> as a leader and achieved
+                    top 33. <b>Mentor new students</b> who join the lab.
+                  </p>
+                  <ul class="tech_tags">
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>PyTorch</li>
+                    <li>OpenCV</li>
+                    <li>QT5</li>
+                    <li>Linux</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <div class="project">
+                <p class="title">Receive Cloud Invoice</p>
+                <ul>
+                  <li>
+                    <p>
+                      An web application which receive and manage electrical
+                      invoices from the suppliers. It receive the einvoices in
+                      four ways: user upload the invoice file through the app;
+                      supplier send the email have invoice file in attachments
+                      to the email address generate by the app; supplier send
+                      invoice file through postman; supplier using web
+                      application Sending Cloud Invoice to send invoice file.
+                      The app help user to easy
+                      <b>manage einvoices from 1000 suppliers</b> and receiving
+                      around <b>10000 invoices each month</b> (around
+                      <b>1000 invoices a day</b> at the end of the month).
+                    </p>
+                  </li>
+                  <li><img src="./images/schema_RCI.png" /></li>
+                </ul>
+              </div>
+            </li>
 
-    <div id="about">
-      <h2>About myself</h2>
-      <p>
-        Hi everyone, I was a researcher at the IC Design Lab at HCMUT in AI
-        technology and published a paper at a scientific conference for
-        students. After that, I work as a BE Engineer. I can write clean code
-        and implement RESTful API, GraphQL API, and background worker. I would
-        describe myself as an active, responsive, and hard-working person.
-        Furthermore, I can simple CI tasks using github action and continue
-        learning more about the infrastructure.
-      </p>
-    </div>
-    <div id="education">
-      <h2>Education</h2>
-      <ul>
-        <li>Ho Chi Minh University of Technology</li>
-        <img id="logo_bach_khoa" src="./images/logo_bach_khoa.png" />
-        <p>Time: 8/2018 - 11/2022</p>
-        <p>Major: Electrical and Electronics</p>
-        <p>GPA: 8.07/10.00</p>
-      </ul>
-    </div>
-    <div id="skills">
-      <h2>My skills</h2>
-      <ul>
-        <li>Design and implement RestAPI</li>
-        <li>Design and implement GraphqlAPI</li>
-        <li>Design and implement background worker</li>
-        <li>Apply design patterns in coding</li>
-        <li>Build CI with github action</li>
-        <li>Working with cloud AWS</li>
-        <li>Deployment using Docker, Kubernetes and Terraform</li>
-        <li>Implement multi-threading</li>
-      </ul>
-    </div>
-    <div id="experiences">
-      <h2>My experiences</h2>
-      <ul>
-        <li>
-          <div class="experience">
-            <div class="left_side">
-              <p class="title">08/2022 - present</p>
-              <br />
-              <img
-                id="logo_moneyforward_vietnam"
-                src="./images/logo_moneyforward_vietnam.png"
-              />
-            </div>
-            <div class="right_side">
-              <p class="title">Backend Engineer</p>
-              <p>
-                Design, implement and maintain server using Python language.
-                Work closely with product owner, senior developer to implement
-                new feature, enhance old feature. Monitor system with help of
-                Datadog and Rollbar when something deploy to production.
-                Communicate with other team in the company to integrate with
-                their product. Handle requests from customer support.
-              </p>
-              <ul class="tech_tags">
-                <li>Python</li>
-                <li>Django</li>
-                <li>Celery</li>
-                <li>MySQL</li>
-                <li>Redis</li>
-                <li>SendGrid</li>
-                <li>Docker</li>
-                <li>Kubernetes</li>
-                <li>Datadog</li>
-                <li>Sentry</li>
-                <li>Rollbar</li>
-                <li>AWS</li>
-                <li>Linux</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="experience">
-            <div class="left_side">
-              <p class="title">01/2021 - 05/2022</p>
-              <br />
-              <img
-                id="logo_ic_design_lab"
-                src="./images/logo_ic_design_lab.jpg"
-              />
-            </div>
-            <div class="right_side">
-              <p class="title">AI researcher</p>
-              <p>
-                Studying AI technology in image processing field under
-                instruction from a teacher. Read scientific papers about CNN.
-                Build projects based on image processing. Write and publish a
-                scientific paper. Join BK Innovation contest as a leader and
-                achieved top 33. Mentor for new students.
-              </p>
-              <ul class="tech_tags">
-                <li>Python</li>
-                <li>C++</li>
-                <li>PyTorch</li>
-                <li>OpenCV</li>
-                <li>QT5</li>
-                <li>Linux</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <div class="project">
-            <p class="title">Receive Cloud Invoice</p>
-            <ul>
-              <li>
-                <p>
-                  An web application which receive and manage electrical
-                  invoices from the suppliers. It receive the einvoices in four
-                  ways: user upload the invoice file through the app; supplier
-                  send the email have invoice file in attachments to the email
-                  address generate by the app; supplier send invoice file
-                  through postman; supplier using web application Sending Cloud
-                  Invoice to send invoice file. The app help user to easy manage
-                  einvoices from 1000 suppliers.
-                </p>
-              </li>
-              <li><img src="./images/schema_RCI.png" /></li>
-            </ul>
-          </div>
-        </li>
+            <li>
+              <div class="project">
+                <p class="title">Sending Cloud Invoice</p>
+                <ul>
+                  <li>
+                    <p>
+                      This is the web application which responsible for sending
+                      invoice file to Receive Cloud Invoice (one in four ways).
+                      User can send multiple files with high performance because
+                      of multithreading. User can view the history of sent
+                      invoice file.
+                    </p>
+                  </li>
+                  <li><img src="./images/schema_SCI.png" /></li>
+                </ul>
+              </div>
+            </li>
 
-        <li>
-          <div class="project">
-            <p class="title">Sending Cloud Invoice</p>
-            <ul>
-              <li>
-                <p>
-                  This is the web application which responsible for sending
-                  invoice file to Receive Cloud Invoice (one in four ways). User
-                  can send multiple files with high performance because of
-                  multithreading. User can view the history of sent invoice
-                  file.
-                </p>
-              </li>
-              <li><img src="./images/schema_SCI.png" /></li>
-            </ul>
-          </div>
-        </li>
+            <li>
+              <div class="project">
+                <p class="title">Detect COVID-19 in CT lung images</p>
+                <ul>
+                  <li>
+                    <p>
+                      An CNN model which is used to detect COVID-19 in lung CT
+                      image. It is a variant of model U-Net combine with
+                      <b
+                        >four techniques: soft-gated skip connection in residual
+                        dialted block, attention module, deep supervision and
+                        countourlet transform</b
+                      >. The results is better than other CNN models. This model
+                      have been
+                      <b
+                        >write down as a scientific paper and published in
+                        <a
+                          href="https://link.springer.com/chapter/10.1007/978-3-031-60154-5_28"
+                          >EAI ICRESM</a
+                        ></b
+                      >
+                    </p>
+                  </li>
+                  <li><img src="./images/CNN_results.png" /></li>
+                </ul>
+              </div>
+            </li>
 
-        <li>
-          <div class="project">
-            <p class="title">Detect COVID-19 in CT lung images</p>
-            <ul>
-              <li>
-                <p>
-                  An CNN model which is used to detect COVID-19 in lung CT
-                  image. It is a variant of model U-Net combine with four
-                  techniques: soft-gated skip connection in residual dialted
-                  block, attention module, deep supervision and countourlet
-                  transform. The results is better than other CNN models. This
-                  model have been write down as a scientific paper and published
-                  in
+            <li>
+              <div class="project">
+                <p class="title">Feedback machine</p>
+                <ul>
+                  <li>
+                    <p>
+                      A machine collect feedback from customer through 3
+                      emotions: neural, happy and angry. Is used Haar-cascade
+                      technique to get the face of the customer and then
+                      calculate the distance between eyebrown to detect the
+                      emotion. It used Qt Creator to build GUI.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="certifications">
+          <h2>Certifications</h2>
+          <ul>
+            <li>
+              <div class="certification">
+                <div class="left_side">
+                  <img
+                    src="./images/aws_solution_associate_certification.png"
+                  />
+                  <p>04/04/2024 - 04/04/2027</p>
+                </div>
+                <p class="title">
+                  AWS Certified Solutions Architect - Associate
                   <a
-                    href="https://link.springer.com/chapter/10.1007/978-3-031-60154-5_28"
-                    >EAI ICRESM</a
+                    href="https://www.credly.com/badges/194b3221-c256-4167-b3be-f33f68560e3d"
+                    >Badge</a
                   >
                 </p>
-              </li>
-              <li><img src="./images/CNN_results.png" /></li>
-            </ul>
-          </div>
-        </li>
-
-        <li>
-          <div class="project">
-            <p class="title">Feedback machine</p>
-            <ul>
-              <li>
-                <p>
-                  A machine collect feedback from customer through 3 emotions:
-                  neural, happy and angry. Is used Haar-cascade technique to get
-                  the face of the customer and then calculate the distance
-                  between eyebrown to detect the emotion. It used Qt Creator to
-                  build GUI.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div id="certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li>
-          <div class="certification">
-            <div class="left_side">
-              <img src="./images/aws_solution_associate_certification.png" />
-              <p>04/04/2024 - 04/04/2027</p>
-            </div>
-            <p class="title">
-              AWS Certified Solutions Architect - Associate
-              <a
-                href="https://www.credly.com/badges/194b3221-c256-4167-b3be-f33f68560e3d"
-                >Badge</a
-              >
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="certification">
-            <div class="left_side">
-              <img src="./images/toeic_certificate.png" />
-              <p>03/16/2022 - 03/16/2024</p>
-            </div>
-            <p class="title">TOEIC Reading and Listening</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div id="contacts">
-      <h2>Contacts</h2>
-      <ul>
-        <li>Phone: 0919655473</li>
-        <li>Email: nguyenminhvinh37@gmail.com</li>
-        <li>
-          Linkedin:
-          https://www.linkedin.com/in/vinh-nguy%E1%BB%85n-minh-4b5458235/
-        </li>
-        <li>Github: https://github.com/MinhVinh-37</li>
-      </ul>
+              </div>
+            </li>
+            <li>
+              <div class="certification">
+                <div class="left_side">
+                  <img src="./images/toeic_certificate.png" />
+                  <p>03/16/2022 - 03/16/2024</p>
+                </div>
+                <p class="title">TOEIC Reading and Listening</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>
