@@ -69,6 +69,12 @@ img {
   padding-left: 0px;
 }
 
+.skill {
+  border: 0;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
 #experiences ul {
   list-style-type: none;
   padding-left: 0px;
