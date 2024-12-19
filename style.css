@@ -18,9 +18,16 @@ div {
   padding: 10px;
 }
 
-#portfolio_title {
-  border-top: 4px solid;
-  text-align: center;
+#cursor_bg {
+  /* display: none; */
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #adefd1ff;
+  border-radius: 50%;
+  filter: blur(200px);
+  border: 0px;
+  pointer-events: none;
 }
 
 li {
@@ -36,13 +43,31 @@ img {
   height: 100px;
 }
 
+.box:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
+#portfolio_title {
+  border-top: 4px solid;
+  text-align: center;
+}
+
 #logo_bach_khoa {
   height: auto;
+}
+
+#contacts ul {
+  list-style-type: none;
+  padding-left: 0px;
 }
 
 #experiences ul {
   list-style-type: none;
   padding-left: 0px;
+}
+
+#experiences:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
 }
 
 .experience {
@@ -84,6 +109,10 @@ img {
   padding-left: 0px;
 }
 
+#projects:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
 .project {
   display: grid;
   grid-template-columns: 200px auto;
@@ -106,6 +135,10 @@ img {
 #certifications ul {
   list-style-type: none;
   padding-left: 0px;
+}
+
+#certifications:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
 }
 
 .certification {

@@ -8,47 +8,47 @@
   </head>
   <body>
     <div id="main">
+      <div id="cursor_bg"></div>
       <div id="left">
-        <div id="portfolio_title">
+        <div id="portfolio_title" class="box">
           <h2>Hi everyone, My name is</h2>
           <h1>Nguyen Minh Vinh</h1>
           <h3>a software engineer</h3>
         </div>
-        <div id="about">
+        <div id="about" class="box">
           <h2>About myself</h2>
           <p>
             Hi everyone, I was born on May 2nd, 2000. I was born in Binh Thuan
             province. My house is only 200m from the sea, however I cannot swim.
-            Currently I'm living and working at Ho Chi Minh city.
+            Currently, I'm living and working in Ho Chi Minh City.
           </p>
           <p>
-            When I was a kid, I very fond of logical and electronics things. I
-            used to good at Math and Physics. Therefore, I become a software
-            engineer.
+            When I was a kid, I was very fond of logical and electronic things.
+            I used to be good at Math and Physics. Therefore, I become a
+            software engineer.
           </p>
           <p>
-            In the college, I was a researcher at the IC Design Lab at HCMUT in
-            AI technology. At that time, I spent all my time reading scientific
-            paper and learning about <b>Machine Learning</b> and
-            <b>Deep Learning</b>, it was a very hard time. However the results
-            is sastified, I <b>published a scientific paper</b> at a scientific
-            conference about a CNN model. After that, I work as a Backend End
-            Engineer at MoneyForward Viet Nam, which is a
-            <b>Japan product company</b>. I involved in two projects:
-            <b>managing electrical invoices</b> and
-            <b>sending electrical invoices</b>, which
+            In college, I was a researcher at the IC Design Lab at HCMUT in AI
+            technology. At that time, I spent all my time reading scientific
+            papers and learning about <b>Machine Learning</b> and
+            <b>Deep Learning</b>, it was a very hard time. However the result is
+            satisfactory, that is I <b>published a scientific paper</b> at a
+            scientific conference about a CNN model. After that,After that, I
+            worked as a Backend End Engineer at MoneyForward Viet Nam, which is
+            a <b>Japanese product company</b>. I am currently involved in two
+            projects: <b>managing electrical invoices</b> and
+            <b>sending electrical invoices</b>, which are
             <b
-              >scalabily, reliability, high performance, easy monitoring and
-              fault tolerance</b
+              >scalability, reliability, high performance, easy monitoring, and
+              fault tolerance.</b
             >.
           </p>
           <p>
-            In my free time, I'm usually playing video games, watching Kdrama,
-            watching anime, playing soccer, playing soccer and hanging out with
-            my friends or colleges.
+            In my free time, I usually play video games, watch Kdrama, watch
+            anime, play soccer, and hang out with my friends or colleagues.
           </p>
         </div>
-        <div id="education">
+        <div id="educations" class="box">
           <h2>Education</h2>
           <ul>
             <li>Ho Chi Minh University of Technology</li>
@@ -58,21 +58,25 @@
             <p>GPA: 8.07/10.00</p>
           </ul>
         </div>
-        <div id="contacts">
+        <div id="contacts" class="box">
           <h2>Contacts</h2>
           <ul>
             <li>Phone: 0919655473</li>
             <li>Email: nguyenminhvinh37@gmail.com</li>
             <li>
-              Linkedin:
-              https://www.linkedin.com/in/vinh-nguy%E1%BB%85n-minh-4b5458235/
+              <a
+                href="https://www.linkedin.com/in/vinh-nguy%E1%BB%85n-minh-4b5458235/"
+                ><img src="./images/logo_linkedin.png"
+              /></a>
+              <a href="https://github.com/MinhVinh-37"
+                ><img src="./images/logo_github.png"
+              /></a>
             </li>
-            <li>Github: https://github.com/MinhVinh-37</li>
           </ul>
         </div>
       </div>
       <div id="right">
-        <div id="skills">
+        <div id="skills" class="box">
           <h2>My skills</h2>
           <ul>
             <li>Design and implement RestAPI</li>
@@ -85,7 +89,7 @@
             <li>Implement multi-threading</li>
           </ul>
         </div>
-        <div id="experiences">
+        <div id="experiences" class="box">
           <h2>My experiences</h2>
           <ul>
             <li>
@@ -99,7 +103,7 @@
                   />
                 </div>
                 <div class="right_side">
-                  <p class="title">Backend Engineer</p>
+                  <p class="title">Backend Engineer - MoneyForward Viet Nam</p>
                   <p>
                     Design, implement and maintain server using Python language.
                     <b>Work closely with product owner, senior developer</b> to
@@ -139,7 +143,7 @@
                   />
                 </div>
                 <div class="right_side">
-                  <p class="title">AI researcher</p>
+                  <p class="title">AI researcher - IC Design Lab in HCMUT</p>
                   <p>
                     Studying AI technology in <b>image processing</b> field
                     under instruction from a teacher.
@@ -162,7 +166,7 @@
             </li>
           </ul>
         </div>
-        <div id="projects">
+        <div id="projects" class="box">
           <h2>Projects</h2>
           <ul>
             <li>
@@ -253,7 +257,7 @@
             </li>
           </ul>
         </div>
-        <div id="certifications">
+        <div id="certifications" class="box">
           <h2>Certifications</h2>
           <ul>
             <li>
@@ -286,5 +290,24 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const bg = document.getElementById("cursor_bg");
+
+      document.addEventListener("pointermove", (e) => {
+        bg.style.display = "block";
+
+        bg.animate(
+          {
+            top: String(Number(e.pageY) - 50) + "px",
+            left: String(Number(e.pageX) - 53) + "px",
+          },
+          {
+            duration: 0,
+            fill: "forwards",
+          }
+        );
+      });
+    </script>
   </body>
 </html>
